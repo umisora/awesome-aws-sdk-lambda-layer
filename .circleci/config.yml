@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  # https://circleci.com/docs/ja/2.0/circleci-images/#python
+  build:
+    docker:
+      - image: circleci/python:3.7.3
+    steps:
+      - checkout
+      - run:
+            name: pip install 
+            command: pip install -t ./python boto3
+      - run:
+            name: zip libraries 
+            command: zip -r boto3-latest.zip python
