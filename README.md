@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/umisora/awesome-aws-sdk-lambda-layer.svg?style=svg)](https://circleci.com/gh/umisora/awesome-aws-sdk-lambda-layer)
+
 awesome-aws-sdk-lambda-layer
 ====
 
