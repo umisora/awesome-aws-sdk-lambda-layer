@@ -37,5 +37,5 @@ response = client.add_layer_version_permission(
 layer_permission_statement = response['Statement']
 
 print('LayerArn = ' + layer_arn)
-print('LayerVersion = ' + layer_version)
+print('LayerVersion = ' + str(layer_version))
 print('LayerVersionArn = ' + layer_version_arn)
