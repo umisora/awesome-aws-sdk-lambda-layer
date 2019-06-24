@@ -24,7 +24,7 @@ response = client.publish_layer_version(
 layer_arn = response['LayerArn']
 layer_version_arn = response['LayerVersionArn']
 layer_version = response['Version']
-statement_id = layer_name + '_' + layer_version
+statement_id = layer_name + '_' + str(layer_version)
 
 response = client.add_layer_version_permission(
     LayerName=layer_arn,
